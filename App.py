@@ -18,11 +18,11 @@ class Book:
 book1 = Book("Las aventuras","Charles",50,568)
 book2 = Book("Odisea","Juan",41,412)
 
-print(book1.getPrice())
-print(book2.getPrice())
+#print(book1.getPrice())
+#print(book2.getPrice())
 
 book2.setDiscount(0.5)
-print(book2.getPrice())
+#print(book2.getPrice())
 
 class NewsPaper:
 
@@ -30,5 +30,7 @@ class NewsPaper:
         self.title = title
 
 eltiempo = NewsPaper("el tiempo")
-print(type(book1))
-print(type(eltiempo))
+elpais = NewsPaper("el pais")
+print(type(book1) == type(book2))
+print(type(eltiempo) == type(book1))
+print(type(elpais) == type(eltiempo))
