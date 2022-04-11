@@ -34,3 +34,7 @@ elpais = NewsPaper("el pais")
 print(type(book1) == type(book2))
 print(type(eltiempo) == type(book1))
 print(type(elpais) == type(eltiempo))
+
+print(isinstance(book1, Book))
+print(isinstance(elpais, Book))
+print(isinstance(elpais, NewsPaper))
