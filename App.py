@@ -23,3 +23,12 @@ print(book2.getPrice())
 
 book2.setDiscount(0.5)
 print(book2.getPrice())
+
+class NewsPaper:
+
+    def __init__(self,title):
+        self.title = title
+
+eltiempo = NewsPaper("el tiempo")
+print(type(book1))
+print(type(eltiempo))
