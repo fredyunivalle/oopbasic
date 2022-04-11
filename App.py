@@ -1,11 +1,10 @@
-class MyClass:
-    """A simple example class"""
-    i = 12345
+class Book:
 
-    def f(self):
-        return 'hello worlrer'
+    def __init__(self,title):
+        self.title = title
 
-x = MyClass()
+book1 = Book("Las aventuras")
+book2 = Book("Odisea")
 
-print(x.f())
-print(x.i)
+print(book1.title)
+print(book2.title)
