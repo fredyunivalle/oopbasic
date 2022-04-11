@@ -1,10 +1,16 @@
 class Book:
 
-    def __init__(self,title):
+    def __init__(self,title,author,pages,price):
         self.title = title
+        self.author = author
+        self.pages = pages
+        self.price = price
 
-book1 = Book("Las aventuras")
-book2 = Book("Odisea")
+    def getPrice(self):
+        return self.price
 
-print(book1.title)
-print(book2.title)
+book1 = Book("Las aventuras","Charles",50,568)
+book2 = Book("Odisea","Juan",41,412)
+
+print(book1.getPrice())
+print(book2.getPrice())
